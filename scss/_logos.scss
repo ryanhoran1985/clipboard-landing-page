@@ -1,0 +1,57 @@
+.logos {
+
+    &__container {
+        text-align: center;
+
+        @include breakpoint(medium) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 70px auto;
+
+            @include breakpoint(medium) {
+                margin: 0 20px 40px 20px;
+            }
+    
+            @include breakpoint(large) {
+                margin: 0;
+            }
+        }
+
+
+        // .logo {
+        //     flex: 1;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+
+        //     &:not(:last-child) {
+        //         margin-bottom: 60px;
+
+        //         @include breakpoint(large) {
+        //             margin-bottom: 0px;
+        //         }
+                
+        //     }
+            
+
+        //     @include breakpoint(large) {
+        //         margin-bottom: 0;
+        //     }
+        // }
+
+        // &:first-child {
+        //     align-items: flex-start;
+        // }
+
+        // &:last-child {
+        //     align-items: flex-end;
+        // }
+    }
+}
